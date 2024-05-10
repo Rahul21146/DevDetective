@@ -1,0 +1,450 @@
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+  }
+  
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+  }
+  
+  .login_navbar{
+    background-color: rgb(103, 98, 110);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    place-items: center;
+    height: 5rem;
+  }
+
+  .login_navbar.active{
+    display: none;
+  }
+
+  .logo{
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 2.5px;   
+  }
+
+ .theme_and_signup{
+    display: flex;
+    gap: 15px;
+ }
+
+ .sign_up{
+    display: flex;
+    min-width: 84px;
+    padding: 12px 16px;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold; 
+ }
+ .sign_up.active{
+  display: none;
+ }
+
+ .sign_up:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover);
+  }
+  
+
+  #btn-mode {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 90px;
+    letter-spacing: 2.5px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  #btn-mode:hover {
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width:911px){
+    .theme_and_signup{
+        display: none;
+    }
+  }
+
+  .hero_secetion{
+    max-width: 1280px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  .hero_secetion.active{
+    display: none;
+  }
+
+
+  .hero{
+    width: 650px;
+  }
+   
+  @media  screen and (max-width:911px) {
+    .hero_secetion{
+      flex-direction: column;
+      padding-top: 2rem;
+    }
+
+    .hero{
+      width: 300px;
+    }
+  }
+
+  .right_secetion{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .login_form{
+    padding: 2rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .email,.pasword{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .email_box,.pasword_box{
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid grey;
+    border-radius: 3px;
+    padding: 0.5rem;
+  }
+
+  .remember_me{
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+
+  .login_checkbox,.checkbox{
+    width: 1.5rem;
+  }
+
+  .button{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .login_btn,.reset_btn{
+    width: 100%;
+    padding: 15px 16px;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .login_btn:hover{
+    background-color: var(--btn-hover);
+  }
+
+  .reset_btn:hover{
+    background-color: var(--btn-hover);
+  }
+
+
+ .forget_password{
+  text-decoration: none;
+  font-size: large;
+  color: rgb(61, 38, 38);
+  font-weight: 600;
+ }
+
+ .signup_page{
+  top: 10px;
+  max-width: 1280px;
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+ }
+
+.signup_page.active{
+  display: flex;
+}
+
+  
+ .signup_form{
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+ }
+
+ .content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+ }
+
+ .signup_heading{
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+ }
+ .signup_para{
+  font-size: 1rem;
+  max-width: 40rem;
+  font-weight: 500;
+  color: rgb(82, 69, 69);
+ }
+
+ .content_part{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 30rem ;
+ }
+
+ .content_part input{
+  height:2.5rem ;
+  padding: 0.5rem;
+  font-size: medium;
+  border: none;
+  border-bottom: 2px solid grey;
+ }
+
+ .signup_condition{
+  display: flex;
+  gap: 1rem;
+  font-size: 1.1rem;
+ }
+
+ .signup_image{
+  margin-top: 3rem;
+  width: 400px;
+  margin-left: 4rem;
+ }
+
+
+
+ .submit_btn{
+  max-width: 10rem;
+  padding: 12px 16px;
+  background-color: var(--btn);
+  border: none;
+  border-radius: 7px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold; 
+  cursor: pointer;
+ }
+
+ .submit_btn:hover{
+  background-color: var(--btn-hover);
+ }
+
+
+
+ @media screen and (max-width:911px){
+  .signup_page{
+    padding-top: 2rem;
+    flex-direction: column;
+   }
+
+   .signup_image{
+    width: 200px;
+    margin: 0px;
+    
+   }
+
+   .signup_heading{
+    font-size: 1.5rem;
+   }
+
+   .signup_para{
+    display: none;
+    font-size: 1rem;
+    max-width: 40rem;
+    font-weight: 500;
+    color: rgb(82, 69, 69);
+   }
+
+ }
+
+ @media screen and (max-width:484px){
+  .signup_form{
+    margin-top: 0px;
+ }
+}
+
+.main{
+  display: none;
+}
+
+.main.active{
+  display: flex;
+}
+
+/* main content css start*/
+
+
+.main_content_navbar_div{
+  background-color: rgb(103, 98, 110);
+  display: none;
+  height: 5rem;
+}
+
+.main_content_navbar_div.active{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_content_navbar{
+  margin: auto;
+  display: flex;
+  width: 97%;
+  justify-content: space-evenly;
+  justify-items: center;
+  place-items: center;
+  height: 5rem;
+ 
+}
+
+.main_logo{
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: rgb(11, 28, 75);
+  letter-spacing: 2.5px; 
+}
+
+.main_content_feature{
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+
+.main_content_feature,a{
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.main_content_feature,a:hover{
+  color: rgb(43, 12, 5);
+}
+
+.icon{ 
+  padding :7px;
+  border-radius: 5px;
+  display: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: white;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.icon:hover{
+  color: black;
+}
+
+@media screen and (max-width:718px){
+
+  .main_ontent_navbar{
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main_logo{
+    font-size: 1.8rem;
+    letter-spacing: 2px; 
+  } 
+
+  .main_content_feature{
+    background-color: rgb(126, 103, 103);
+    width: 100%;
+    position: absolute;
+    margin-top: 260px;
+    display: none;
+    place-content: center;
+    place-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .main_content_feature.active{
+    display: flex;
+    flex-direction: column;
+    width: full;
+    gap: 2.5rem;
+    margin-top: 344px;
+  }
+
+  .main_content_feature,a{
+    color: black;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  .main_content_feature,a:hover{
+    color: rgb(43, 12, 5);
+  }
+
+  .icon{ 
+    padding :7px;
+    border-radius: 5px;
+    display: flex;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    transition: 0.2s;
+  }
+  
+  .icon:hover{
+    color: black;
+  }
+ }

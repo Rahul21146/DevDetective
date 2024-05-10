@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dev_det</title>
+</head>
+<body>
+     <div class="login_page">
+        <!--login navbar-->
+        <div class="login_navbar">
+            <!--logo-->
+            <div class="logo">
+                <p>DevDetective</p>
+            </div>
+            <!-- theme ans sign up button-->
+            <div class="theme_and_signup">
+                <button onclick="signUpButtonClickFunction()" class="sign_up" id="sign_up_btn">Sign Up</button>
+                <div id="btn-mode">
+                    <p id="mode-text">LIGHT</p>
+                    <div class="icon-container"><img id="mode-icon" src="./assets/images/moon-icon.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!--login form-->
+        <div class="hero_secetion" id="hero_secetion">
+            <!--left part(login image)-->
+            <div class="hero_image">
+                <img class="hero" src="./assets/images/login-icon.svg" alt="Hero_image">
+            </div>
+            <!--Right Part (form)-->
+            <div class="right_secetion">
+                <form action="" class="login_form">
+                    <div class="input">
+                        <label for="email" class="email" >E-mail</label>
+                        <input id="login_email" class="email_box login_email" type="email" placeholder="Enter your Email">
+                    </div>
+
+                    <div class="input">
+                        <label for="pasword" class="pasword">Pasword</label>
+                        <input id="login_password" class="pasword_box login_password" type="password" placeholder="Enter your Pasword">
+                    </div>
+
+                    <div class="remember_me">
+                        <input type="checkbox" class="login_checkbox">
+                        <label for="checkbox">Rmember Me</label>
+                    </div>
+
+                    <div class="button">
+                        <button onclick="loginButtonClickFunction()" type="button" class="login_btn" id="login_btn"> Log-In</button>
+                        <input class="reset_btn" type="reset">
+                    </div>
+
+                    <div class="additional">
+                        <div>
+                            <a href="#forget_password" class="forget_password">Forgetten Pasword</a>
+                        </div>
+
+                    </div>
+                       
+                </form>
+            </div>
+        </div>
+
+
+
+        <!--signup page-->
+
+        
+        <div class="signup_page" id="signup_page">
+            <!--left part-->
+            <div class="main-content-sinup">
+                <form action="" class="signup_form">
+                    <div class="content">
+                        <h2 class="signup_heading">Sign In To DevDetective</h2>
+                        <p class="signup_para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore cupiditate aliquam omnis doloremque nesciunt? Soluta</p>
+                    </div>
+
+                    <!--input part-->
+                    <div class="content_part">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your E-mail">
+                        <input type="password" placeholder="Your Pasword">
+                        <input type="pasword" placeholder="Repeat Pasword">
+                    </div>
+
+                    <!--button-->
+                    <button onclick="registerButtonClickFunction()" class="submit_btn" id="register_btn">Register</button>
+
+
+                    <!--condition part-->
+                    <div class="signup_condition">
+                        <input type="checkbox" class="checkbox">
+                        <p>I agree in all statements in <a href="">term and service</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!--right part-->
+            <div>
+                <img class="signup_image" src="./assets/images/signin-image.jpg" alt="sign_in image">
+            </div>
+        </div>
+
+     </div>
+
+     <!--main content part-->
+     <div class="wrapper">
+        <div class="main_content_navbar_div">
+            <div class="main_content_navbar">
+                <!--first parrt-->
+                <div class="main_logo">DevDetective</div>
+                <!--second part-->
+                <div class="main_content_feature">
+                    <div class="home  feature"><a href="#home">Home</a></div>
+                    <div class="About feature"><a href="#About">About</a></div>
+                    <div class="contact feature"><a href="#contact">Contact</a></div>
+                    <div class="features feature"><a href="#features">Features</a></div>
+                </div>
+                <!--third part-->
+                <div class="icon" width="100px" >
+                    <i class="fa-solid fa-bars" id="mode"></i>
+                </div>
+            </div>
+        </div>
+     </div>
+     <script src="index.js"></script>
+</body>
+</html>
